@@ -1,0 +1,329 @@
+html, body {
+    font-family: "Open Sans", "Verdana", Arial, sans-serif;
+    font-feature-settings: "liga", "dlig";
+    text-rendering: optimizeLegibility;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+header {
+    border-bottom: .1rem solid #eee;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    background: #fafafa;
+    margin-bottom: 2rem;
+}
+
+
+header>div {
+    display: table;
+    table-layout: auto;
+    width: 60rem;
+    margin: 0 auto 0 auto;
+}
+
+header h1 {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    width: 1px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+header div div {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+
+header div div a {
+    padding-left: 1rem;
+}
+
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 60rem;
+}
+
+
+
+.dialog .outer {
+    z-index: 90;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .3;
+}
+.dialog .inner {
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+    background: #fafafa;
+    border: .1rem solid #eee;
+    border-radius: .2rem;
+    padding: 1rem;
+    min-width: 40rem;
+}
+
+.dialog .inner input {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.dialog .inner div {
+    display: block;
+}
+
+.btn,
+.btn:link,
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:visited {
+    padding: .6rem 1rem;
+    background: #008080;
+    display: inline-block;
+    border-radius: .2rem;
+    box-shadow: .1rem .1rem .1rem 0 rgba(0, 0, 0, 0.2);
+    color: #fff !important;
+    text-decoration: none;
+    margin: .2rem !important;
+    border: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.btn:hover {
+    background: #009a9a;
+}
+
+.btn span.qrcode {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+
+.qrcode canvas, .qrcode img {
+    width: 100%;
+    height: 100%;
+}
+
+.overview {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+.vote, .members, .results {
+    display: table-cell;
+    padding: 0 4rem;
+    box-sizing: border-box;
+}
+
+.vote {
+    text-align: left;
+    min-height: 10rem;
+}
+.vote select {
+    width: 13.6rem;
+    display: block;
+    margin-left: .2rem;
+    height: 2rem;
+}
+.vote .buttons {
+    display: table;
+    table-layout: fixed;
+    width: 14rem;
+}
+
+.vote .buttons span {
+    display: table-cell;
+    width: 7rem;
+}
+.vote .buttons span:first-child {
+    text-align: left;
+}
+.vote .buttons span:last-child {
+    text-align: right;
+}
+
+.members ul, .results ul {
+    display: table;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.members ul li, .results ul li {
+    display: table-row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.members ul li>span, .results ul li>span {
+    display: table-cell;
+    padding-left: 1rem;
+    border-bottom: .1rem solid #ccc;
+    color: #666;
+}
+.members ul li>span:first-child, .results ul li>span:first-child {
+    padding-left: 0;
+}
+
+.members ul li>span:last-child, .results ul li>span:last-child {
+    text-align: right;
+}
+
+.members ul li>span.text, .results ul li>span.text {
+    font-weight: bold;
+}
+
+.members ul li>span.result, .results ul li>span.result {
+    color: #333;
+}
+
+.name, .value {
+    vertical-align: middle;
+}
+
+.effortvalues {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.effortvalues>li {
+    list-style: none;
+    padding: .4rem 0;
+    margin: 0;
+    display: block;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.effortvalues>li:hover,
+.effortvalues>li:active,
+.effortvalues>li.active {
+    background: #ddd;
+}
+
+.select {
+    border-radius: .2rem;
+    border: .1rem solid #ddd;
+    background: #fff;
+    color: #333;
+    padding: .4rem;
+    cursor: default;
+    position: relative;
+}
+.select:after {
+    top: 50%;
+	right: .2rem;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+    pointer-events: none;
+	border-top-color: #333;
+	border-width: .4rem;
+    margin-left: .4rem;
+    margin-top: -.2rem;
+}
+.spinner {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+  
+.double-bounce1, .double-bounce2 {
+    z-index: 50;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+  
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@media (max-width: 62rem) {
+    header {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    main {
+        width: 100%;
+    }
+    
+    header{
+        display: block;
+    }
+    header>*{
+        width: auto !important;
+        display: inline-block !important;
+        white-space: normal !important;
+    }
+    .vote, .members, .results {
+        display: block;
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+    .vote select, .vote .buttons {
+        margin: 0 auto;
+    }
+    .vote {
+        padding: 6rem 1rem;
+    }
+
+    .dialog .inner {
+        left: 1rem;
+        right: 1rem;
+        transform: none;
+        min-width: auto;
+    }
+}

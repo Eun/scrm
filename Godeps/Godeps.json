@@ -1,0 +1,32 @@
+{
+	"ImportPath": "github.com/Eun/scrm",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/bmizerany/pat",
+			"Rev": "6226ea591a40176dd3ff9cd8eff81ed6ca721a00"
+		},
+		{
+			"ImportPath": "github.com/elazarl/go-bindata-assetfs",
+			"Rev": "30f82fa23fd844bd5bb1e5f216db87fd77b5eb43"
+		},
+		{
+			"ImportPath": "github.com/jcuga/golongpoll",
+			"Comment": "v1.1.0-4-g6f70b00",
+			"Rev": "6f70b008d155ed04693bcb8ebe0b693820bebee5"
+		},
+		{
+			"ImportPath": "github.com/jteeuwen/go-bindata",
+			"Comment": "v3.0.7-72-ga0ff256",
+			"Rev": "a0ff2567cfb70903282db057e799fd826784d41d"
+		},
+		{
+			"ImportPath": "github.com/nu7hatch/gouuid",
+			"Rev": "179d4d0c4d8d407a32af483c2354df1d2c91e6c3"
+		}
+	]
+}

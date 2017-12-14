@@ -1,0 +1,12 @@
+{
+    "name": "scrm",
+    "description": "scrm",
+    "keywords": [
+      "go",
+      "scrm"
+    ],
+    "image": "heroku/go:1.9",
+    "mount_dir": "src/github.com/Eun/scrm",
+    "website": "http://github.com/Eun/scrm",
+    "repository": "http://github.com/Eun/scrm"
+  }
